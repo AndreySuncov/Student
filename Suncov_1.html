@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<script>
+    const number = prompt("Введите число")
+    alert(`Введено число ${number}`)
+
+    const x = parseInt(prompt("Введите первое число"))
+    const y = parseInt(prompt("Введите второе число"))
+    const operation = `
+        Введено: x=${x}, y=${y} 
+        Сумма: ${x + y}
+        Разница: ${x - y}
+        Произведение: ${x * y}
+        Частное: ${x / y}
+        Остаток от деления: ${x % y}`
+    alert(operation)
+
+    const z = prompt("Введите задуманное число * 2 + 7")
+    alert(`Задуманное число ${(z - 7) / 2}`)
+
+    const name = prompt("Введите имя")
+    const year = prompt("Введите год рождения")
+    const age = new Date().getFullYear() - year
+    document.write(`${name}: ${age-1} или ${age}`)
+
+</script>
